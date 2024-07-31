@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>자습 2교시 이석 신청</h1>
+    <form action="/api/iseok" method="post">
+        <label for="pos">장소:</label>
+        <select name="pos" id="pos">
+            <option value="0">자습실</option>
+            <option value="1">1학년 공강실</option>
+            <option value="2">2학년 공강실</option>
+            <option value="3">3학년 공강실</option>
+        </select>
+        <input type="submit" value="선택">
+    </form>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<table>
+    {% for number, name, pos in data %}
+    <tr>
+        <td>{{number}}</td>
+        <td>{{name}}</td>
+        <td>{{pos}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

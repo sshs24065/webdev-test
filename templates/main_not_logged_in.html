@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>이석 신청</h1>
+    <h4>로그인이 필요합니다</h4>
+    <button id="goto-login">로그인</button>
+    <button id="goto-register">회원가입</button>
+    <script>
+        document.getElementById("goto-login").onclick = () => {location.href="/login"};
+        document.getElementById("goto-register").onclick = () => {location.href="/register"};
+    </script>
+{% endblock %}

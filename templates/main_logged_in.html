@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>이석 신청</h1>
+    <h4>반갑습니다! {{name}}님!</h4>
+    <button id="goto-iseok">이석 신청 하러 가기(2교시)</button>
+    <button id="goto-view">표 보러 가기</button>
+    <button id="goto-logout">로그아웃</button>
+    <script>
+        document.getElementById("goto-iseok").onclick = () => {location.href="/iseok"};
+        document.getElementById("goto-logout").onclick = () => {location.href="/api/logout"};
+        document.getElementById("goto-view").onclick = () => {location.href="/view"};
+    </script>
+{% endblock %}
